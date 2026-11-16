@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+<!-- AGENT-MEMORY:BEGIN -->
+- Spec content lives in `src/data/spec.ts`; pages under `src/routes/` only render it — edit data, not page copy, so all pages stay consistent.
+- Delivery status rules live only in `src/lib/delivery-status.ts` (tested in `delivery-status.test.ts`); the Kotlin enum and backend RPC must mirror it.
+- Courier screen mockups live in `src/components/screens/CourierScreens.tsx` (`SCREENS` registry) and are shared by the overview and screens pages.
+<!-- AGENT-MEMORY:END -->
